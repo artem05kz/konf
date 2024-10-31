@@ -48,7 +48,6 @@ def parse_bnf(text):
         grammar[name.strip()] = [alt.split() for alt in body.split('|')]
     return grammar
 
-
 def generate_phrase(grammar, start):
     '''
     Сгенерировать случайную фразу.
@@ -57,7 +56,6 @@ def generate_phrase(grammar, start):
         seq = random.choice(grammar[start])
         return ''.join([generate_phrase(grammar, name) for name in seq])
     return str(start)
-
 
 BNF = '''
 S = D | S D
@@ -91,7 +89,6 @@ def generate_phrase(grammar, start):
         return ''.join([generate_phrase(grammar, name) for name in seq])
     return str(start)
 
-
 BNF = '''
 S = ( S ) | { S } | 
 '''
@@ -103,7 +100,6 @@ for i in range(10):
 ```python
 import random
 
-
 def parse_bnf(text):
     '''
     Преобразовать текстовую запись БНФ в словарь.
@@ -114,7 +110,6 @@ def parse_bnf(text):
         grammar[name.strip()] = [alt.split() for alt in body.split('|')]
     return grammar
 
-
 def generate_phrase(grammar, start):
     '''
     Сгенерировать случайную фразу.
@@ -123,7 +118,6 @@ def generate_phrase(grammar, start):
         seq = random.choice(grammar[start])
         return ''.join([generate_phrase(grammar, name) for name in seq])
     return str(start)
-
 
 BNF = '''
 E = T | E | T 
