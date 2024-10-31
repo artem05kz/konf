@@ -4,7 +4,7 @@
 
 # Задача 2
 Dhall:
-```
+```dhall
 let Group = λ(n : Natural) → "ИКБО-" ++ Natural/show n ++ "-20"
 
 let Student =
