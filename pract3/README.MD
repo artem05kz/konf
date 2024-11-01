@@ -1,6 +1,27 @@
 # Задача 1
+```json
+local generateGroups(prefix, count) = [
+  std.format("%s-%d-20", [prefix, i]) for i in std.range(1, count)
+];
 
+local createStudent(name, age, group) = {
+  name: name,
+  age: age,
+  group: group,
+};
 
+local students = [
+  createStudent("Иванов И.И.", 19, "ИКБО-4-20"),
+  createStudent("Петров П.П.", 18, "ИКБО-5-20"),
+  createStudent("Сидоров С.С.", 18, "ИКБО-5-20"),
+  createStudent("Михеев Н. В.", 20, "ИКБО-6-20"),
+];
+
+{
+  groups: generateGroups("ИКБО", 24),
+  students: students,
+  subject: "Конфигурационное управление",
+```
 
 # Задача 2
 Dhall:
