@@ -1,5 +1,5 @@
 # Задача 1
-```json
+```jsonnet
 local generateGroups(prefix, count) = [
   std.format("%s-%d-20", [prefix, i]) for i in std.range(1, count)
 ];
