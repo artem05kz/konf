@@ -1,0 +1,2 @@
+username,hostname,filesystem_path,log_path
+artem,my-computer,virtual_filesystem.tar,log.json
