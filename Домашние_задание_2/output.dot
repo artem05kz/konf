@@ -1,0 +1,8 @@
+digraph G {
+"example-package" -> "dep1";
+"dep1" -> "dep3";
+"dep1" -> "dep4";
+"example-package" -> "dep2";
+"dep2" -> "dep5";
+"example-package" -> "dep3";
+}

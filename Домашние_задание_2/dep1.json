@@ -1,0 +1,8 @@
+{
+  "name": "dep1",
+  "version": "1.0.0",
+  "dependencies": {
+    "dep3": "^1.0.0",
+    "dep4": "^1.0.0"
+  }
+}
