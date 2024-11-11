@@ -1,5 +1,0 @@
-var1: 100;
-var2: { subvar1: 200; subvar2: 300; };
-var3: @(var1 50 +);
-var4: @(var1 3 pow);
-var5: @(100 50 max);
