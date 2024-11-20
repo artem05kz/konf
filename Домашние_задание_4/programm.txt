@@ -1,7 +1,0 @@
-load_const v0 746
-load_const v1 136
-load_const v2 4
-store_to_memory v0 v2
-load_from_memory v3 v2
-equality v0 1 v1
-equality v0 0 v3
